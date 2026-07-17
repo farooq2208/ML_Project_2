@@ -1,4 +1,4 @@
-# 🧠 Personality Type Classifier
+# Personality Type Classifier
 
 An AI-powered web application that predicts whether a person is an
 **Introvert** or **Extrovert** based on seven behavioural and lifestyle
@@ -6,7 +6,7 @@ survey responses.
 
 ---
 
-## 📖 Project Description
+## Project Description
 
 Personality typing has applications in education, career counselling,
 team building, and self-awareness. This project trains a Logistic
@@ -16,7 +16,7 @@ predicted personality type in under a minute.
 
 ---
 
-## 🤖 About the Machine-Learning Model
+## About the Machine-Learning Model
 
 | Property | Detail |
 |---|---|
@@ -34,25 +34,25 @@ directly without any manual feature engineering.
 
 ---
 
-## ✨ Application Features
+## Application Features
 
-- 🎛️ **Seven intuitive inputs** — sliders for continuous behavioural
+- **Seven intuitive inputs** — sliders for continuous behavioural
   scores and radio buttons for binary yes/no questions.
-- 📊 **Confidence breakdown** — colour-coded probability bars for both
+- **Confidence breakdown** — colour-coded probability bars for both
   Introvert and Extrovert classes.
-- ✨ **Personality traits panel** — key characteristics of the predicted
+- **Personality traits panel** — key characteristics of the predicted
   type plus a personalised tip.
-- 🔍 **Input summary expander** — review every submitted answer alongside
+- **Input summary expander** — review every submitted answer alongside
   the result.
-- 📌 **Persistent sidebar** — project overview, how-to-use guide, and
+- **Persistent sidebar** — project overview, how-to-use guide, and
   model details always visible.
-- 🚀 **Production-ready** — cached model loading (`@st.cache_resource`),
+- **Production-ready** — cached model loading (`@st.cache_resource`),
   explicit dtype handling to prevent sklearn/pandas compatibility issues,
   and clean error messaging.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 personality-classifier/
@@ -71,7 +71,7 @@ personality-classifier/
 
 ---
 
-## ⚙️ Installation & Local Setup
+## Installation & Local Setup
 
 ### Prerequisites
 
@@ -122,7 +122,7 @@ Streamlit will automatically open `http://localhost:8501` in your browser.
 
 ---
 
-## 🖱️ How to Use the Application
+## How to Use the Application
 
 1. **Adjust the sliders** for your daily habits — time alone, social event
    attendance, going outside, friends circle size, and posting frequency.
@@ -130,7 +130,7 @@ Streamlit will automatically open `http://localhost:8501` in your browser.
    socialising.
 3. **Click "Predict My Personality"** — the model runs instantly.
 4. **Read your result** — a colour-coded card shows your predicted type
-   (Introvert 🌙 or Extrovert 🌟) with a tagline.
+   (Introvert or Extrovert ) with a tagline.
 5. **Check the confidence bars** — see the probability the model assigns
    to each class.
 6. **Explore your traits** — key personality characteristics and a
@@ -139,7 +139,7 @@ Streamlit will automatically open `http://localhost:8501` in your browser.
 
 ---
 
-## ⚠️ Assumptions & Limitations
+## Assumptions & Limitations
 
 | Item | Detail |
 |---|---|
@@ -151,7 +151,7 @@ Streamlit will automatically open `http://localhost:8501` in your browser.
 
 ---
 
-## 🛠️ Technologies & Libraries
+## Technologies & Libraries
 
 | Library | Version | Purpose |
 |---|---|---|
@@ -164,16 +164,13 @@ Streamlit will automatically open `http://localhost:8501` in your browser.
 
 ---
 
-## 🌐 Live Demo
+## Live Demo
 
-**Live Demo: https://your-streamlit-app-url.streamlit.app**
-
-> Replace the URL above after deploying to
-> [Streamlit Community Cloud](https://streamlit.io/cloud).
+**Live Demo: https://personality-classifier2208.streamlit.app/**
 
 ---
 
-## 🚀 Deploying to Streamlit Community Cloud
+## Deploying to Streamlit Community Cloud
 
 1. Push your project folder to a **public GitHub repository** containing:
    - `app.py`
@@ -188,4 +185,4 @@ Streamlit will automatically open `http://localhost:8501` in your browser.
 
 ---
 
-*Made with ❤️ using Streamlit and scikit-learn.*
+*Developed by: Farooq Hassnain Sheikh.*
