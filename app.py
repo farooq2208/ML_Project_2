@@ -100,16 +100,12 @@ def render_sidebar():
             This app uses a **Logistic Regression** model trained on
             behavioural survey data to classify personality types as
             **Introvert** or **Extrovert**.
-
-        st.markdown("---")
    
             ### Prediction Classes
             | Class | Description |
             |-------|-------------|
             |  Extrovert | Energised by social interaction |
             |  Introvert | Energised by solitude & reflection |
-
-        st.markdown("---")
 
             ### Disclaimer
             > This classifier is for **educational
