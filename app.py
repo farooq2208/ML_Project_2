@@ -14,7 +14,7 @@ import streamlit as st
 # ── Page configuration ───────────────────────────────────────────────────────
 st.set_page_config(
     page_title="Personality Type Classifier",
-    page_icon="🧠",
+    page_icon="",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -27,7 +27,7 @@ LABEL_MAP = {0: "Introvert", 1: "Extrovert"}
 
 RESULT_CONFIG = {
     "Extrovert": {
-        "emoji": "🌟",
+        "emoji": "",
         "color": "#1565c0",
         "bg": "#e3f2fd",
         "border": "#90caf9",
@@ -40,12 +40,12 @@ RESULT_CONFIG = {
             "Builds a wide circle of friends and acquaintances",
         ],
         "tip": (
-            "💡 **Tip:** Channel your social energy into leadership, "
+            " **Tip:** Channel your social energy into leadership, "
             "networking, or collaborative projects."
         ),
     },
     "Introvert": {
-        "emoji": "🌙",
+        "emoji": "",
         "color": "#4a148c",
         "bg": "#f3e5f5",
         "border": "#ce93d8",
@@ -58,7 +58,7 @@ RESULT_CONFIG = {
             "Builds a small but close-knit circle of friends",
         ],
         "tip": (
-            "💡 **Tip:** Lean into your ability to focus deeply — creative, "
+            " **Tip:** Lean into your ability to focus deeply — creative, "
             "analytical, and research-driven work often suits introverts well."
         ),
     },
@@ -82,7 +82,7 @@ def load_model():
         return joblib.load(MODEL_PATH)
     except FileNotFoundError:
         st.error(
-            f"❌ Model file `{MODEL_PATH}` not found. "
+            f" Model file `{MODEL_PATH}` not found. "
             "Make sure it lives in the same directory as `app.py`."
         )
         st.stop()
@@ -110,8 +110,8 @@ def render_sidebar():
             ### Prediction Classes
             | Class | Description |
             |-------|-------------|
-            | 🌟 Extrovert | Energised by social interaction |
-            | 🌙 Introvert | Energised by solitude & reflection |
+            |  Extrovert | Energised by social interaction |
+            |  Introvert | Energised by solitude & reflection |
 
             ### Disclaimer
             > This classifier is for **entertainment and educational
@@ -133,14 +133,14 @@ def render_sidebar():
         )
 
         st.markdown("---")
-        st.caption("Built with [Streamlit](https://streamlit.io) 🎈")
+        st.caption("Built with [Streamlit](https://streamlit.io) ")
 
 
 # ── Input form ───────────────────────────────────────────────────────────────
 def render_input_form() -> dict:
     """Render the user-input form and return raw values as a dict."""
 
-    st.header("📋 Tell Us About Your Habits & Preferences")
+    st.header(" Tell Us About Your Habits & Preferences")
     st.markdown(
         "Move the sliders and select the options that best reflect your "
         "typical behaviour. There are no right or wrong answers."
@@ -187,7 +187,7 @@ def render_input_form() -> dict:
 
     # ── Right column: social sliders + yes/no ────────────────────────────────
     with col2:
-        st.subheader("🤝 Social Preferences")
+        st.subheader(" Social Preferences")
 
         social_events = st.slider(
             "How often do you attend social events? (0 = Never, 10 = Very Often)",
@@ -296,7 +296,7 @@ def render_result(label: str, proba: np.ndarray, inputs: dict):
 
     # ── Confidence scores ─────────────────────────────────────────────────────
     with res_col1:
-        st.subheader("📊 Prediction Confidence")
+        st.subheader(" Prediction Confidence")
         st.caption("How confident the model is for each personality type.")
 
         # proba order: [Introvert (0), Extrovert (1)]
@@ -325,13 +325,13 @@ def render_result(label: str, proba: np.ndarray, inputs: dict):
 
     # ── Personality traits ────────────────────────────────────────────────────
     with res_col2:
-        st.subheader(f"✨ Key Traits of an {label}")
+        st.subheader(f" Key Traits of an {label}")
         for trait in cfg["traits"]:
             st.markdown(f"- {trait}")
         st.markdown(cfg["tip"])
 
     # ── Input summary ─────────────────────────────────────────────────────────
-    with st.expander("🔍 Review your submitted answers"):
+    with st.expander(" Review your submitted answers"):
         display_map = {
             "Time Spent Alone (hrs/day)":         inputs["Time_spent_Alone"],
             "Stage Fright":                       inputs["Stage_fear"],
@@ -361,7 +361,7 @@ def main():
             margin-bottom: 28px;
         ">
             <h1 style="color: white; margin: 0 0 8px 0; font-size: 2.3rem;">
-                🧠 Personality Type Classifier
+                 Personality Type Classifier
             </h1>
             <p style="color: #e1bee7; font-size: 1.05rem; margin: 0;">
                 Answer seven quick questions about your everyday habits and
@@ -383,7 +383,7 @@ def main():
     btn_col, _ = st.columns([1, 3])
     with btn_col:
         predict_clicked = st.button(
-            "🔍 Predict My Personality",
+            " Predict My Personality",
             type="primary",
             use_container_width=True,
         )
