@@ -149,7 +149,7 @@ def render_input_form() -> dict:
 
     # ── Left column: behavioural sliders ─────────────────────────────────────
     with col1:
-        st.subheader("⏱️ Daily Habits")
+        st.subheader("Daily Habits")
 
         time_alone = st.slider(
             "How many hours per day do you typically spend alone?",
