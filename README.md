@@ -21,7 +21,7 @@ predicted personality type in under a minute.
 | Property | Detail |
 |---|---|
 | **Algorithm** | Logistic Regression |
-| **Selection method** | 5-fold GridSearchCV over `C ∈ {0.1, 1, 10}` and `solver ∈ {lbfgs, saga}` |
+| **Selection method** | 5-fold GridSearchCV over `C = (0.1, 1, 10)` and `solver = (lbfgs, saga)` |
 | **Optimisation metric** | Accuracy |
 | **Preprocessing** | OneHotEncoder (drop=first) for binary categoricals · StandardScaler for numerics |
 | **Target classes** | Introvert (0) · Extrovert (1) |
