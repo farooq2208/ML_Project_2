@@ -101,11 +101,6 @@ def render_sidebar():
             behavioural survey data to classify personality types as
             **Introvert** or **Extrovert**.
 
-            ### How to use
-            1. Adjust the sliders and toggles in the main panel.
-            2. Click **Predict My Personality**.
-            3. Explore your personalised result and confidence score.
-
             ### Prediction Classes
             | Class | Description |
             |-------|-------------|
