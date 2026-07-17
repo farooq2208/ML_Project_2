@@ -132,7 +132,7 @@ def render_sidebar():
         )
 
         st.markdown("---")
-        st.caption("Built with [Streamlit](https://streamlit.io) ")
+        st.caption("Developed by: Farooq Hassnain Sheikh")
 
 
 # ── Input form ───────────────────────────────────────────────────────────────
