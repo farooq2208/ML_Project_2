@@ -26,7 +26,7 @@ predicted personality type in under a minute.
 | **Preprocessing** | OneHotEncoder (drop=first) for binary categoricals · StandardScaler for numerics |
 | **Target classes** | Introvert (0) · Extrovert (1) |
 | **Test Accuracy** | ~93 % |
-| **Dataset** | 2 900 behavioural survey responses (after cleaning: ~2 400 records) |
+| **Dataset** | 2900 behavioural survey responses (after cleaning: ~2 400 records) |
 
 The full pipeline (preprocessing + model) is serialised in
 `personality_classifier_model.pkl` so that the app can pass raw user inputs
