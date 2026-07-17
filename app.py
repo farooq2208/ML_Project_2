@@ -91,7 +91,6 @@ def load_model():
 # ── Sidebar ──────────────────────────────────────────────────────────────────
 def render_sidebar():
     with st.sidebar:
-        st.image("https://img.icons8.com/fluency/96/brain.png", width=80)
         st.title("Personality Type Classifier")
         st.markdown("---")
 
