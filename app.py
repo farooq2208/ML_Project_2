@@ -113,7 +113,7 @@ def render_sidebar():
             |  Introvert | Energised by solitude & reflection |
 
             ### Disclaimer
-            > This classifier is for **entertainment and educational
+            > This classifier is for **educational
             > purposes only**. Personality is complex and multidimensional —
             > no single model can fully capture it.
             """
@@ -127,7 +127,7 @@ def render_sidebar():
             - **Tuning:** 5-fold GridSearchCV
             - **Metric:** Accuracy
             - **Test Accuracy:** ~93 %
-            - **Dataset:** 2 900 behavioural survey responses
+            - **Dataset:** 2900 behavioural survey responses
             """
         )
 
